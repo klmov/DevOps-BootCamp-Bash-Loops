@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#!/bin/bash
+
 quote=$1
- 
-echo " $quote " | rev | tr '[:upper:] [:lower:]' '[:lower:] [:upper:]'
+for string in "$quote"; do
+        echo "$quote" | rev | tr "[:upper:] [:lower:]" "[:lower:] [:upper:]"
+done
+
