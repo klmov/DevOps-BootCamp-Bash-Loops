@@ -1,3 +1,5 @@
 #!/bin/bash
 
-# Put your code here
+quote=$1
+ 
+echo " $quote " | rev | tr '[:upper:] [:lower:]' '[:lower:] [:upper:]'
